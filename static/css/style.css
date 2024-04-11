@@ -2,6 +2,7 @@
 :root {
     --amber: #ffd500;
     --amber-dark: #cdab01;
+    --alert-red: #f91919;
     --suitable-dark: #363f4f;
     --grey-muted: #7b7b7b;
     --black: #000000;
@@ -10,6 +11,7 @@
 /* sheet-variables */
 .clr-grey-muted { color: var(--grey-muted); }
 .bg-amber { background-color: var(--amber); }
+.bg-alert-red { background-color: var(--alert-red); }
 
 .w-fit { width: fit-content; }
 
