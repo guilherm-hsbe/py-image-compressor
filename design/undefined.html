@@ -43,12 +43,11 @@
                 This tool <strong>supports</strong> the following image formats for compression: JPEG, PNG.
             </div>
 
-            <label for="flImg" class="button button-upload has-weight-bold is-pill has-size-2">
-                <i class="fa fa-cloud-upload has-mr-1"></i>
-                <span>Upload file</span>
-            </label>
-            <input id="flImg" type="file" style="display:none;" 
-                aria-label="Image file input control" aria-hidden="true"/>
+            <!-- alert -->
+            <div id="pnlAlert" class="alert has-mb-none w-fit has-mt-12 bg-alert-red">
+                <span>Content of the alert message</span>
+                <button id="btnCloseAlert" class="close has-ml-2" onclick="closeAlert()"></button>
+            </div>
         </div>
     </main>
 
