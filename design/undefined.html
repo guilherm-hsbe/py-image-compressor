@@ -24,7 +24,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <header class="container">
+        <div class="is-inline-flex has-pt-4">
+            <a class="navlink has-size-2 has-text-black-hover" href="undefined.html">
+                <i class="fa-solid fa-panorama has-mr-1"></i>
+                <span>IMGLite</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div align="center">
+            <div class="has-size-8 has-weight-bold has-text-black has-mb-8">
+                A simple image <span class="bg-amber">compressor</span> and metadata editor.
+            </div>
+
+            <div class="has-size-2 has-weight-medium clr-grey-muted has-mb-8" style="max-width: 40rem;">
+                This tool <strong>supports</strong> the following image formats for compression: JPEG, PNG.
+            </div>
+
+            <label for="flImg" class="button button-upload has-weight-bold is-pill has-size-2">
+                <i class="fa fa-cloud-upload has-mr-1"></i>
+                <span>Upload file</span>
+            </label>
+            <input id="flImg" type="file" style="display:none;" 
+                aria-label="Image file input control" aria-hidden="true"/>
+        </div>
     </main>
 
     <footer class="has-bg-black">
