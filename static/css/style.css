@@ -1,1 +1,23 @@
+/* root-parameters */
+:root {
+    --amber: #ffd500;
+    --amber-dark: #cdab01;
+    --suitable-dark: #363f4f;
+    --grey-muted: #7b7b7b;
+    --black: #000000;
+    --white: #ffffff; }
+
+/* sheet-variables */
+.clr-grey-muted { color: var(--grey-muted); }
+.bg-amber { background-color: var(--amber); }
+
 .w-fit { width: fit-content; }
+
+.button-upload, .button-upload:active { transition: 0.1s; }
+.button-upload {
+    box-shadow: 0 10px var(--black);
+    background-color: var(--amber);
+    color: var(--black) }
+.button-upload:active {
+    box-shadow: unset;
+    transform: translateY(10px); }
