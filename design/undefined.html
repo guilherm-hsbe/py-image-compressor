@@ -38,9 +38,18 @@
             <div class="has-size-8 has-weight-bold has-text-black has-mb-8">
                 A simple image <span class="bg-amber">compressor</span> and metadata editor.
             </div>
-
             <div class="has-size-2 has-weight-medium clr-grey-muted has-mb-8" style="max-width: 40rem;">
                 This tool <strong>supports</strong> the following image formats for compression: JPEG, PNG.
+            </div>
+
+            <!-- file-upload -->
+            <div>
+                <label for="flImg" class="button button-upload has-weight-bold is-pill has-size-2">
+                    <i class="fa fa-cloud-upload has-mr-1"></i>
+                    <span>Upload file</span>
+                </label>
+                <input id="flImg" type="file" accept=".png,.jpg"
+                    style="display:none;" aria-label="Image file input control" aria-hidden="true"/>
             </div>
 
             <!-- alert -->
@@ -70,5 +79,7 @@
 
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/f8b51f3b83.js" crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
