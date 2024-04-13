@@ -67,13 +67,49 @@
                     <h6 class="has-text-muted">More</h6>
                     <a class="is-block has-mb-2 has-text-light has-text-highlight-hover is-clickable w-fit">Features</a>
                     <a class="is-block has-mb-2 has-text-light has-text-highlight-hover is-clickable w-fit">Documentation</a>
-                    <a class="is-block has-mb-2 has-text-light has-text-highlight-hover is-clickable w-fit">License</a>
+                    <a class="is-block has-mb-2 has-text-light has-text-highlight-hover is-clickable w-fit"
+                        onclick="handleLicenseVisibility('visible')">License</a>
                     <a class="is-block has-mb-2 has-text-light has-text-highlight-hover is-clickable w-fit">About</a>
                 </div>
             </div>
         </div>
         <div class="has-pb-2 has-text-muted has-size-1" align="center">
             &copy; 2024 <b>IMGLite</b>. All rights reserved.
+        </div>
+
+        <!-- license -->
+        <div id="pnlLicense" class="scrim" style="visibility:hidden; z-index:999;" >
+            <div class="modal">
+                <div class="is-flex has-items-center">
+                    <h4 class="has-mb-none">
+                        <span>MIT License</span>
+                        <a href="https://github.com/guilherm-hsbe/py-sandbox/blob/main/LICENSE" target="_blank"
+                            class="fa-solid fa-square-up-right has-text-dark has-text-secondary-hover"></a>
+                    </h4>
+                    <button id="btnCloseLicense" class="close has-ml-auto" onclick="handleLicenseVisibility('hidden')"></button>
+                </div>
+                <div class="has-pt-6">
+                    <p>Copyright (c) 2024 IMGLite</p>
+
+                    <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+                        of this software and associated documentation files (the "Software"), to deal
+                        in the Software without restriction, including without limitation the rights
+                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                        copies of the Software, and to permit persons to whom the Software is
+                        furnished to do so, subject to the following conditions:</p>
+
+                    <p>The above copyright notice and this permission notice shall be included in all
+                        copies or substantial portions of the Software.</p>
+
+                    <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                        SOFTWARE.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
